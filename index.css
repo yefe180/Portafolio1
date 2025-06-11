@@ -294,7 +294,7 @@ body {
 }
 
 .sobre-mi-contenedor {
-margin-left: 10%; 
+margin-left: 15%; 
  display: flex;
   gap: 30px; /* Espacio entre imágenes */
   flex-wrap: wrap; /* Opcional: permite que se acomoden en varias filas si no hay espacio */
