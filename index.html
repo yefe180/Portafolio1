@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio yefe</title>
+</head>
+<body>
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio </title>
+  <!-- Google Fonts: Poppins (texto) y Pacifico (títulos) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Vinculación al CSS -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Encabezado principal -->
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">Mi Portafolio</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de inicio / Hero -->
+  <section id="inicio" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2 class="hero-title">¡Hola! Soy <span>Yeferin Rodriguez</span></h2>
+        <p class="hero-subtitle">
+          Estudiante de Ingeniería en Sistemas Futura Scrum Master & Project Manager
+liderando equipos ágiles para garantizar entregas de valor con eficiencia y calidad.
+        </p>
+      </div>
+      <div class="hero-image1">
+        <!-- Avatar o imagen principal cargada desde enlace -->
+        <img
+          src="contenido/perfil.png"
+          alt="Mi Avatar"
+        />
+      </div>
+       <div class="hero-image2  ">
+        <!-- Avatar o imagen principal cargada desde enlace -->
+        <img
+          src="contenido/log.jpg"
+          alt="Mi Avatar"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Proyectos -->
+  <section id="proyectos" class="seccion proyectos">
+    <div class="container">
+      <h2 class="seccion-titulo">Proyectos</h2>
+      <div class="proyectos-grid">
+        <!-- Proyecto 1 -->
+        <div class="card proyect-card">
+          <img
+            src="contenido/Norris.png"
+            alt="Proyecto 1"
+          />
+          <h3>NORRIS</h3>
+          <p>Asistente virtual para pacientes con EPOC que mejora la comunicación médico-paciente, monitoriza síntomas y ofrece estadísticas de salud.  Desarrollado mediante metodologías ágiles (Design Sprint, Scrum, Kanban) en 5 sprints, usando JavaScript y Python. Mi rol como Scrum Master en formación incluyó la gestión con Azure DevOps para asegurar una ejecución eficiente del proyecto..</p>
+          
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="card proyect-card">
+          <img
+            src="contenido/Complaints.png"
+            alt="Proyecto 2"
+          />
+          <h3>COMPLAINTS UGB</h3>
+          <p>App móvil para reporte seguro de quejas/sugerencias, mejorando la calidad educativa.l proyecto se llevó a cabo utilizando metodologías ágiles. Como Scrum Master en formación, lideré la planificación, coordinación del equipo y gestión de plazos, abarcando investigación de campo, diseño UI/UX, desarrollo y pruebas.</p>
+          
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="card proyect-card">
+          <img
+            src="contenido/academix.png"
+            alt="Proyecto 3"
+          />
+          <h3>ACADEMIX UGB</h3>
+          <p>Agenda universitaria  centralizada en horarios de clases, organización de tareas con recordatorios inteligentes, sistema de chat asistente y análisis de métricas de productividad, logrando una mejora significativa en la eficiencia del rendimiento académico de los usuarios.  En este proyecto aplique metodologías ágiles  con seguimiento y control de proyectos mediante Azure DevOps. </p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Sobre mí -->
+  <section id="sobre-mi" class="seccion sobre-mi">
+    <div class="container sobre-mi-content">
+      <h2 class="seccion-titulo">Sobre mí</h2>
+      <div class="sobre-mi-grid">
+        <div class="sobre-mi-texto">
+          <p>
+            Estudiante de Ingeniería en Sistemas y Redes Informáticas 9° ciclo Scrum Master en formación
+con experiencia en gestión ágil de proyectos de software.
+          </p>
+          <p>
+            Manejo herramientas de gestión ágil de proyectos como Azure DevOps y Asana. Siempre buscando aprender y aplicar nuevas metodologías para optimizar procesos y resultados.
+          </p>
+        </div>
+     <div class="sobre-mi-contenedor">
+  <div class="sobre-mi-imagen">
+    <img src="contenido/habilidades-scrum.png" alt="Ilustración Cute" />
+  </div>
+  <div class="sobre-mi-imagen">
+    <img src="contenido/project manager.png" alt="Ilustración Cute" />
+  </div>
+</div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="seccion contacto">
+    <div class="container">
+      <h2 class="seccion-titulo">Contacto</h2>
+      <form class="formulario" action="#" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tu@correo.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            placeholder="Escribe tu mensaje..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+   
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 katerinyeferincamposrodriguez Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Twitter">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
+            alt="Twitter"
+          />
+        </a>
+        <a href="#" aria-label="GitHub">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            alt="GitHub"
+          />
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+            alt="LinkedIn"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+</body>
+</html>
