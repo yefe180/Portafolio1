@@ -294,9 +294,9 @@ body {
 }
 
 .sobre-mi-contenedor {
-  display: flex;
-  left: 12%;
-  gap: 20px; /* Espacio entre imágenes */
+margin-left: 10%; 
+ display: flex;
+  gap: 30px; /* Espacio entre imágenes */
   flex-wrap: wrap; /* Opcional: permite que se acomoden en varias filas si no hay espacio */
 }
 .sobre-mi-imagen img {
