@@ -265,10 +265,7 @@ body {
 /* =========================
    Sección Sobre mí
    ========================= */
-.sobre-mi {
-  padding: 60px 0;
-  background-color: var(--color-acento);
-}
+
 
 .sobre-mi-content {
   display: flex;
@@ -290,6 +287,7 @@ body {
   font-size: 1rem;
   color: var(--color-texto);
   margin-top: 123px;
+  
 }
 
 .sobre-mi-texto p {
