@@ -169,6 +169,42 @@ body {
 }
 
 /* =========================
+   Sección Curriculum
+   ========================= */
+
+/* Estilos generales para la sección */
+.seccion.curriculum {
+  padding: 40px 0;
+}
+
+/* Grid para las tarjetas del curriculum */
+.curriculum-grid {
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+/* Card */
+.curriculum-card {
+  background: #ffbebe;
+  border-radius: 10px;
+  padding: 20px;
+  width: 370px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Imagen dentro del card */
+.curriculum-card img {
+  width: 100%;        /* La imagen ocupa todo el ancho del contenedor */
+  height: auto;       /* Mantiene la proporción */
+  border-radius: 10px;
+  object-fit: cover;  /* Ajusta la imagen si no es del mismo tamaño */
+
+}
+
+
+/* =========================
    Sección Proyectos
    ========================= */
 .proyectos {
@@ -183,6 +219,7 @@ body {
   margin-bottom: 40px;
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
+  flex-wrap: wrap;
 }
 
 .seccion-titulo {
@@ -294,14 +331,16 @@ body {
 }
 
 .sobre-mi-contenedor {
-margin-left: 15%; 
+ margin-left: 0%; 
  display: flex;
-  gap: 30px; /* Espacio entre imágenes */
-  flex-wrap: wrap; /* Opcional: permite que se acomoden en varias filas si no hay espacio */
+ flex-direction: center;
+ align-items: center;
+ gap: 98px; /* Espacio entre imágenes */
+
 }
 .sobre-mi-imagen img {
-  width: 100%;
-  max-width: 350px;
+  width: 133%;
+  max-width: 700px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
@@ -319,6 +358,7 @@ margin-left: 15%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
