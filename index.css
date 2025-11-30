@@ -172,18 +172,27 @@ body {
    Sección Curriculum
    ========================= */
 
-/* Estilos generales para la sección */
+/* Sección del curriculum */
+/* NO usar flex en la sección completa */
 .seccion.curriculum {
   padding: 40px 0;
 }
 
-/* Grid para las tarjetas del curriculum */
+/* Usar flex SOLO en el grid */
 .curriculum-grid {
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;     /* Centra horizontalmente */
+  justify-content: center;
+  width: 100%;
   gap: 15px;
-  flex-wrap: wrap;
 }
+footer {
+  width: 300%;
+  display: block;  /* Asegura que ocupe todo el ancho */
+}
+
+
 /* Card */
 .curriculum-card {
   background: #ffbebe;
@@ -194,14 +203,14 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Imagen dentro del card */
+/* Imagen */
 .curriculum-card img {
-  width: 100%;        /* La imagen ocupa todo el ancho del contenedor */
-  height: auto;       /* Mantiene la proporción */
+  width: 100%;
+  height: auto;
   border-radius: 10px;
-  object-fit: cover;  /* Ajusta la imagen si no es del mismo tamaño */
-
+  object-fit: cover;
 }
+
 
 
 /* =========================
@@ -313,7 +322,8 @@ body {
   text-align:justify;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 7568px) {
   .sobre-mi-content {
     flex-direction: row;
   }
@@ -323,7 +333,6 @@ body {
   flex: 1;
   font-size: 1rem;
   color: var(--color-texto);
-  
 }
 
 .sobre-mi-texto p {
@@ -339,8 +348,8 @@ body {
 
 }
 .sobre-mi-imagen img {
-  width: 133%;
-  max-width: 700px;
+  width: 123%;
+  max-width: 1000px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
@@ -349,21 +358,19 @@ body {
 /* =========================
    Sección Contacto
    ========================= */
-.contacto {
-  padding: 60px 0;
+
+.seccion.contacto {
+  width: 100%;
+  display: block;
 }
 
-.formulario {
-  max-width: 600px;
-  margin: 0 auto;
+.formulario-contacto {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px;
-  opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
-  animation-delay: 0.8s;
+  align-items: center; /* Centra el formulario */
 }
+
 
 .form-group {
   display: flex;
@@ -378,7 +385,7 @@ body {
 
 .form-group input,
 .form-group textarea {
-  padding: 10px;
+  padding: 15px;
   border: 2px solid var(--color-principal);
   border-radius: 10px;
   font-family: var(--fuente-base);
@@ -399,6 +406,7 @@ body {
   color: #000000;
   border: none;
   border-radius: 20px;
+  margin-top: 15px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
