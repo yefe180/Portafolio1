@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 /* =========================
    Variables (colores y fuentes)
    ========================= */
@@ -11,12 +15,59 @@
   --fuente-titulo: 'Pacifico', cursive;
 }
 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+
+  /* Botón hamburguesa a la derecha */
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* El nav ya no ocupa espacio en la fila */
+  .nav {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 100%;
+  }
+
+  /* El menú se oculta por defecto */
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-principal);
+    padding: 25px 0;
+    text-align: center;
+    gap: 25px;
+  }
+
+  /* El menú se abre */
+  .nav ul.open {
+    display: flex;
+  }
+}
+
+
+
+
+
 /* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -34,7 +85,7 @@ body {
    ========================= */
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -56,6 +107,12 @@ body {
   padding: 15px 0;
 }
 
+
+.nav-toggle {
+  margin-left: auto;
+}
+
+
 .logo {
   font-family: var(--fuente-titulo);
   color: #ffffff;
@@ -70,9 +127,16 @@ body {
 
 .nav ul {
   list-style: none;
-  display: flex;
   gap: 20px;
 }
+
+/* En pantallas grandes sí será horizontal */
+@media (min-width: 769px) {
+  .nav ul {
+    display: flex;
+  }
+}
+
 
 .nav a {
   color: #ffffff;
@@ -150,7 +214,7 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 10%;
-  margin-left: 10%;
+  margin-left: 0%;
   object-fit: cover;
   border: 5px solid #ffffff;
   opacity: 0;
@@ -188,9 +252,9 @@ body {
   gap: 15px;
 }
 footer {
-  width: 300%;
-  display: block;  /* Asegura que ocupe todo el ancho */
+  width: 100%;
 }
+
 
 
 /* Card */
@@ -323,7 +387,7 @@ footer {
 }
 
 
-@media (min-width: 7568px) {
+@media (min-width: 768px) {
   .sobre-mi-content {
     flex-direction: row;
   }
@@ -348,11 +412,10 @@ footer {
 
 }
 .sobre-mi-imagen img {
-  width: 123%;
-  max-width: 1000px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 350px;
 }
+
 
 
 /* =========================
